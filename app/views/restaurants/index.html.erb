@@ -1,2 +1,8 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<h1>Liste des restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <h2>Name: <%= restaurant.name %></h2>
+  <h2>Stars: <%= restaurant.stars %></h2>
+  <h2>Address: <%= restaurant.address %></h2>
+  <h2></h2>
+<% end %>
