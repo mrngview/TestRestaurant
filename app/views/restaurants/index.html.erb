@@ -4,5 +4,5 @@
   <h2>Name: <%= restaurant.name %></h2>
   <h2>Stars: <%= restaurant.stars %></h2>
   <h2>Address: <%= restaurant.address %></h2>
-  <h2></h2>
+  <h2><%= link_to "Voir", restaurant_path(restaurant) %></h2>
 <% end %>
