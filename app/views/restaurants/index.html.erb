@@ -1,8 +1,15 @@
-<h1>Liste des restaurants</h1>
+<h3>Liste des restaurants</h3>
+
+<h3><%= link_to "Create a new restaurant", new_restaurant_path %></h3>
 
 <% @restaurants.each do |restaurant| %>
-  <h2>Name: <%= restaurant.name %></h2>
-  <h2>Stars: <%= restaurant.stars %></h2>
-  <h2>Address: <%= restaurant.address %></h2>
-  <h2><%= link_to "Voir", restaurant_path(restaurant) %></h2>
+
+<h2>--------------------------------------------------------------</h2>
+
+  <h3>Name: <%= restaurant.name %></h3>
+  <h3>Stars: <%= restaurant.stars %></h3>
+  <h3>Address: <%= restaurant.address %></h3>
+  <h3><%= link_to "Voir", restaurant_path(restaurant) %></h3>
+  <h3><%= link_to "Edit", edit_restaurant_path(restaurant) %></h3>
+  <h3><%= link_to "Delete", restaurant_path(restaurant), method: :delete, data: { confirm: "Are you sure?" } %></h3>
 <% end %>
