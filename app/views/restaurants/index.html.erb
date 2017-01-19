@@ -9,7 +9,7 @@
   <h3>Name: <%= restaurant.name %></h3>
   <h3>Stars: <%= restaurant.stars %></h3>
   <h3>Address: <%= restaurant.address %></h3>
-  <h3><%= link_to "Voir", restaurant_path(restaurant) %></h3>
+  <h3><%= link_to "See", restaurant_path(restaurant) %></h3>
   <h3><%= link_to "Edit", edit_restaurant_path(restaurant) %></h3>
   <h3><%= link_to "Delete", restaurant_path(restaurant), method: :delete, data: { confirm: "Are you sure?" } %></h3>
 <% end %>

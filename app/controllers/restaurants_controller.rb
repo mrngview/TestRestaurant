@@ -24,8 +24,7 @@ class RestaurantsController < ApplicationController
   end
 
   def update
-    Restaurant.update(restaurant_params)
-    # raise
+    @restaurant.update(restaurant_params)
     redirect_to restaurants_path
   end
 
